@@ -1,0 +1,11 @@
+body {
+    background: #ffffff;
+    color: #ffffff;
+    font-size: 0;
+    height: 1px;
+    width: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+}

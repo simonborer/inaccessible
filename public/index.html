@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Inaccessible Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="description" content="A site only accessible to screen readers">
+    <meta property="og:title" content="Inaccessible website">
+    <meta property="og:description" content="A site only accessible to screen readers">
+    <meta property="og:image" content="https://www.mywebsite.com/android-chrome-512x512.png">
+    <meta property="og:image:alt" content="A white block">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="theme-color" content="#FFFFFF">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="banner">
+        <p>This site does not use cookies to improve the user experience and to collect data. But if it did, you could <button type="button" id="configure-button">configure</button> which cookies you want to give your consent to.</p>
+        <button type="button" id="accept-button" class="button">Accept all</button>
+    </div>
+    <div hidden class="modal">
+        <div class="modal-content" role="dialog">
+            <div class="modal-header">
+                <h1>Configure cookies</h1>
+                <button id="close-button" type="button">Close</button>
+            </div>
+            <div class="modal-body">
+                <p>Here's where we'd ask you to opt-in to different cookies based on the category</p>
+                <h3>User experience</h3>
+                <div class="modal-cookie">
+                    <input checked type="checkbox" id="appcues" />
+                    <label for="appcues">Appcues</label>
+                </div>
+                <div class="modal-cookie">
+                    <input checked type="checkbox" id="ab-tasty" />
+                    <label for="ab-tasty">AB Tasty</label>
+                </div>
+                <h3>Tracking</h3>
+                <div class="modal-cookie">
+                    <input checked type="checkbox" id="google-analytics" />
+                    <label for="google-analytics">Google Analytics</label>
+                </div>
+            </div>
+            <button id="confirm-button" class="modal-confirm button" type="button">Confirm</button>
+        </div>
+    </div>
+    <header>
+        <a href="#main">Skip to main content</a>
+        <h1>Inaccessible website</h1>
+        <p>This website is only accessible if you're using a screenreader.</p>
+        <p>Now, I know what you're thinking, "I can just remove the CSS that's preventing me from using this site with my eyes! You're not the boss of me!"</p>
+        <p>Okay, that's true. But how about you be a sport and play along?</p>
+    </header>
+    <main id="main">
+
+    </main>
+</body>
+
+</html>
